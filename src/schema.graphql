@@ -1,0 +1,18 @@
+type Query {
+  serviciosByCiclo(ciclo: String!): [Servicio],
+  allServicios: [Servicio]
+}
+type Servicio {
+  IDUSUARIO: String
+  CODTRAMITE: String
+  MODIFICACIONRED: String
+  FECHASOLICITUD: String
+  FECHAPAGO: String
+  FECHACONEXION: String
+  COSTOCONEXION: Float
+  CICLOCIERRE: String
+  SEC_NIS: Float
+  SEC_MOD: Float
+  USUARIO_PROC: String
+  FECHA_PROC: String
+}
